@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.lion-logo img{
+	width:70px;
+	border-radius:5px;
+	cursor:pointer;
+
+}
+
+
+.header{
+	height:200px;
+	background:black;
+}
+
+
+ul li{
+	
+	list-style:none;
+}
+
+ul li a{
+	color:white;
+	text-decoration:none;
+}
+
+
+ul{
+	display:flex;
+	justify-content:space-around;
+}
+
+
+@media screen and (max-width:620px){
+
+
+	.lion-logo{
+		display:none;
+	}
+
+	ul{
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+
+	}
+
+	
+
+	.header{
+		width:100%;
+		height:1000px;
+		background:grey;
+		line-height:100px;
+	}
+
+	ul li a{
+		transition:0.1s;
+		font-weight:bold;
+
+
+	}
+
+	ul li a:hover{
+		padding:5px;
+       background:black;
+       border:1px;
+       border-radius:5px;
+       transform:scale(1.3);
+	}
+}
+
